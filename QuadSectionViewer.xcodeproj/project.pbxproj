@@ -1,0 +1,487 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FB9FCAD1169A9AC800AF512E /* MiniView.m in Sources */ = {isa = PBXBuildFile; fileRef = FB9FCAD0169A9AC800AF512E /* MiniView.m */; };
+		FBA74B0716980A6500A52692 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBA74B0616980A6500A52692 /* UIKit.framework */; };
+		FBA74B0916980A6500A52692 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBA74B0816980A6500A52692 /* Foundation.framework */; };
+		FBA74B0B16980A6500A52692 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBA74B0A16980A6500A52692 /* CoreGraphics.framework */; };
+		FBA74B1116980A6500A52692 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FBA74B0F16980A6500A52692 /* InfoPlist.strings */; };
+		FBA74B1316980A6500A52692 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA74B1216980A6500A52692 /* main.m */; };
+		FBA74B1716980A6500A52692 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA74B1616980A6500A52692 /* AppDelegate.m */; };
+		FBA74B1916980A6500A52692 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = FBA74B1816980A6500A52692 /* Default.png */; };
+		FBA74B1B16980A6500A52692 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FBA74B1A16980A6500A52692 /* Default@2x.png */; };
+		FBA74B1D16980A6500A52692 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FBA74B1C16980A6500A52692 /* Default-568h@2x.png */; };
+		FBA74B2516980A6500A52692 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBA74B2416980A6500A52692 /* SenTestingKit.framework */; };
+		FBA74B2616980A6500A52692 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBA74B0616980A6500A52692 /* UIKit.framework */; };
+		FBA74B2716980A6500A52692 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBA74B0816980A6500A52692 /* Foundation.framework */; };
+		FBA74B2F16980A6500A52692 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FBA74B2D16980A6500A52692 /* InfoPlist.strings */; };
+		FBA74B3216980A6600A52692 /* QuadSectionViewerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA74B3116980A6600A52692 /* QuadSectionViewerTests.m */; };
+		FBA74B3E16980A9200A52692 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA74B3D16980A9200A52692 /* RootViewController.m */; };
+		FBA74B411698127300A52692 /* SingleQuadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA74B401698127300A52692 /* SingleQuadViewController.m */; };
+		FBA74B45169813E100A52692 /* RootView.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA74B44169813E100A52692 /* RootView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FBA74B2816980A6500A52692 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FBA74AF916980A6500A52692 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FBA74B0116980A6500A52692;
+			remoteInfo = QuadSectionViewer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FB9FCACF169A9AC800AF512E /* MiniView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MiniView.h; path = ../MiniView.h; sourceTree = "<group>"; };
+		FB9FCAD0169A9AC800AF512E /* MiniView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MiniView.m; path = ../MiniView.m; sourceTree = "<group>"; };
+		FBA4B13716A5CCD10069CF07 /* SingleViewControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingleViewControllerDelegate.h; sourceTree = "<group>"; };
+		FBA74B0216980A6500A52692 /* QuadSectionViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuadSectionViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBA74B0616980A6500A52692 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		FBA74B0816980A6500A52692 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FBA74B0A16980A6500A52692 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		FBA74B0E16980A6500A52692 /* QuadSectionViewer-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "QuadSectionViewer-Info.plist"; sourceTree = "<group>"; };
+		FBA74B1016980A6500A52692 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FBA74B1216980A6500A52692 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FBA74B1416980A6500A52692 /* QuadSectionViewer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "QuadSectionViewer-Prefix.pch"; sourceTree = "<group>"; };
+		FBA74B1516980A6500A52692 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FBA74B1616980A6500A52692 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FBA74B1816980A6500A52692 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		FBA74B1A16980A6500A52692 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		FBA74B1C16980A6500A52692 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		FBA74B2316980A6500A52692 /* QuadSectionViewerTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuadSectionViewerTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBA74B2416980A6500A52692 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		FBA74B2C16980A6500A52692 /* QuadSectionViewerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "QuadSectionViewerTests-Info.plist"; sourceTree = "<group>"; };
+		FBA74B2E16980A6500A52692 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FBA74B3016980A6500A52692 /* QuadSectionViewerTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuadSectionViewerTests.h; sourceTree = "<group>"; };
+		FBA74B3116980A6600A52692 /* QuadSectionViewerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuadSectionViewerTests.m; sourceTree = "<group>"; };
+		FBA74B3C16980A9200A52692 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		FBA74B3D16980A9200A52692 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		FBA74B3F1698127300A52692 /* SingleQuadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingleQuadViewController.h; sourceTree = "<group>"; };
+		FBA74B401698127300A52692 /* SingleQuadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingleQuadViewController.m; sourceTree = "<group>"; };
+		FBA74B43169813E100A52692 /* RootView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootView.h; sourceTree = "<group>"; };
+		FBA74B44169813E100A52692 /* RootView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootView.m; sourceTree = "<group>"; };
+		FBA74BE516983F3600A52692 /* HelperCategories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelperCategories.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FBA74AFF16980A6500A52692 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBA74B0716980A6500A52692 /* UIKit.framework in Frameworks */,
+				FBA74B0916980A6500A52692 /* Foundation.framework in Frameworks */,
+				FBA74B0B16980A6500A52692 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBA74B1F16980A6500A52692 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBA74B2516980A6500A52692 /* SenTestingKit.framework in Frameworks */,
+				FBA74B2616980A6500A52692 /* UIKit.framework in Frameworks */,
+				FBA74B2716980A6500A52692 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FBA74AF716980A6500A52692 = {
+			isa = PBXGroup;
+			children = (
+				FBA74B0C16980A6500A52692 /* QuadSectionViewer */,
+				FBA74B2A16980A6500A52692 /* QuadSectionViewerTests */,
+				FBA74B0516980A6500A52692 /* Frameworks */,
+				FBA74B0316980A6500A52692 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FBA74B0316980A6500A52692 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FBA74B0216980A6500A52692 /* QuadSectionViewer.app */,
+				FBA74B2316980A6500A52692 /* QuadSectionViewerTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FBA74B0516980A6500A52692 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FBA74B0616980A6500A52692 /* UIKit.framework */,
+				FBA74B0816980A6500A52692 /* Foundation.framework */,
+				FBA74B0A16980A6500A52692 /* CoreGraphics.framework */,
+				FBA74B2416980A6500A52692 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FBA74B0C16980A6500A52692 /* QuadSectionViewer */ = {
+			isa = PBXGroup;
+			children = (
+				FBA74B42169813C400A52692 /* RootViewController */,
+				FBA74B1516980A6500A52692 /* AppDelegate.h */,
+				FBA74B1616980A6500A52692 /* AppDelegate.m */,
+				FBA74B3F1698127300A52692 /* SingleQuadViewController.h */,
+				FBA74B401698127300A52692 /* SingleQuadViewController.m */,
+				FB9FCACF169A9AC800AF512E /* MiniView.h */,
+				FB9FCAD0169A9AC800AF512E /* MiniView.m */,
+				FBA74B0D16980A6500A52692 /* Supporting Files */,
+				FBA74BE516983F3600A52692 /* HelperCategories.h */,
+			);
+			path = QuadSectionViewer;
+			sourceTree = "<group>";
+		};
+		FBA74B0D16980A6500A52692 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FBA74B0E16980A6500A52692 /* QuadSectionViewer-Info.plist */,
+				FBA74B0F16980A6500A52692 /* InfoPlist.strings */,
+				FBA74B1216980A6500A52692 /* main.m */,
+				FBA74B1416980A6500A52692 /* QuadSectionViewer-Prefix.pch */,
+				FBA74B1816980A6500A52692 /* Default.png */,
+				FBA74B1A16980A6500A52692 /* Default@2x.png */,
+				FBA74B1C16980A6500A52692 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FBA74B2A16980A6500A52692 /* QuadSectionViewerTests */ = {
+			isa = PBXGroup;
+			children = (
+				FBA74B3016980A6500A52692 /* QuadSectionViewerTests.h */,
+				FBA74B3116980A6600A52692 /* QuadSectionViewerTests.m */,
+				FBA74B2B16980A6500A52692 /* Supporting Files */,
+			);
+			path = QuadSectionViewerTests;
+			sourceTree = "<group>";
+		};
+		FBA74B2B16980A6500A52692 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FBA74B2C16980A6500A52692 /* QuadSectionViewerTests-Info.plist */,
+				FBA74B2D16980A6500A52692 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FBA74B42169813C400A52692 /* RootViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FBA74B3C16980A9200A52692 /* RootViewController.h */,
+				FBA74B3D16980A9200A52692 /* RootViewController.m */,
+				FBA4B13716A5CCD10069CF07 /* SingleViewControllerDelegate.h */,
+				FBA74B43169813E100A52692 /* RootView.h */,
+				FBA74B44169813E100A52692 /* RootView.m */,
+			);
+			name = RootViewController;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FBA74B0116980A6500A52692 /* QuadSectionViewer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBA74B3516980A6600A52692 /* Build configuration list for PBXNativeTarget "QuadSectionViewer" */;
+			buildPhases = (
+				FBA74AFE16980A6500A52692 /* Sources */,
+				FBA74AFF16980A6500A52692 /* Frameworks */,
+				FBA74B0016980A6500A52692 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QuadSectionViewer;
+			productName = QuadSectionViewer;
+			productReference = FBA74B0216980A6500A52692 /* QuadSectionViewer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FBA74B2216980A6500A52692 /* QuadSectionViewerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBA74B3816980A6600A52692 /* Build configuration list for PBXNativeTarget "QuadSectionViewerTests" */;
+			buildPhases = (
+				FBA74B1E16980A6500A52692 /* Sources */,
+				FBA74B1F16980A6500A52692 /* Frameworks */,
+				FBA74B2016980A6500A52692 /* Resources */,
+				FBA74B2116980A6500A52692 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FBA74B2916980A6500A52692 /* PBXTargetDependency */,
+			);
+			name = QuadSectionViewerTests;
+			productName = QuadSectionViewerTests;
+			productReference = FBA74B2316980A6500A52692 /* QuadSectionViewerTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FBA74AF916980A6500A52692 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Miguel Ángel Lomelí Cantú";
+			};
+			buildConfigurationList = FBA74AFC16980A6500A52692 /* Build configuration list for PBXProject "QuadSectionViewer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FBA74AF716980A6500A52692;
+			productRefGroup = FBA74B0316980A6500A52692 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FBA74B0116980A6500A52692 /* QuadSectionViewer */,
+				FBA74B2216980A6500A52692 /* QuadSectionViewerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FBA74B0016980A6500A52692 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBA74B1116980A6500A52692 /* InfoPlist.strings in Resources */,
+				FBA74B1916980A6500A52692 /* Default.png in Resources */,
+				FBA74B1B16980A6500A52692 /* Default@2x.png in Resources */,
+				FBA74B1D16980A6500A52692 /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBA74B2016980A6500A52692 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBA74B2F16980A6500A52692 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		FBA74B2116980A6500A52692 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FBA74AFE16980A6500A52692 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBA74B1316980A6500A52692 /* main.m in Sources */,
+				FBA74B1716980A6500A52692 /* AppDelegate.m in Sources */,
+				FBA74B3E16980A9200A52692 /* RootViewController.m in Sources */,
+				FBA74B411698127300A52692 /* SingleQuadViewController.m in Sources */,
+				FBA74B45169813E100A52692 /* RootView.m in Sources */,
+				FB9FCAD1169A9AC800AF512E /* MiniView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBA74B1E16980A6500A52692 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBA74B3216980A6600A52692 /* QuadSectionViewerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FBA74B2916980A6500A52692 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FBA74B0116980A6500A52692 /* QuadSectionViewer */;
+			targetProxy = FBA74B2816980A6500A52692 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FBA74B0F16980A6500A52692 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FBA74B1016980A6500A52692 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		FBA74B2D16980A6500A52692 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FBA74B2E16980A6500A52692 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FBA74B3316980A6600A52692 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FBA74B3416980A6600A52692 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FBA74B3616980A6600A52692 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "QuadSectionViewer/QuadSectionViewer-Prefix.pch";
+				INFOPLIST_FILE = "QuadSectionViewer/QuadSectionViewer-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		FBA74B3716980A6600A52692 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "QuadSectionViewer/QuadSectionViewer-Prefix.pch";
+				INFOPLIST_FILE = "QuadSectionViewer/QuadSectionViewer-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		FBA74B3916980A6600A52692 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/QuadSectionViewer.app/QuadSectionViewer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "QuadSectionViewer/QuadSectionViewer-Prefix.pch";
+				INFOPLIST_FILE = "QuadSectionViewerTests/QuadSectionViewerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		FBA74B3A16980A6600A52692 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/QuadSectionViewer.app/QuadSectionViewer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "QuadSectionViewer/QuadSectionViewer-Prefix.pch";
+				INFOPLIST_FILE = "QuadSectionViewerTests/QuadSectionViewerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FBA74AFC16980A6500A52692 /* Build configuration list for PBXProject "QuadSectionViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBA74B3316980A6600A52692 /* Debug */,
+				FBA74B3416980A6600A52692 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBA74B3516980A6600A52692 /* Build configuration list for PBXNativeTarget "QuadSectionViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBA74B3616980A6600A52692 /* Debug */,
+				FBA74B3716980A6600A52692 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBA74B3816980A6600A52692 /* Build configuration list for PBXNativeTarget "QuadSectionViewerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBA74B3916980A6600A52692 /* Debug */,
+				FBA74B3A16980A6600A52692 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FBA74AF916980A6500A52692 /* Project object */;
+}

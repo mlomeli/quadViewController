@@ -7,7 +7,14 @@
 //
 
 #import "AppDelegate.h"
-#import "SingleQuadViewController.h"
+#import "RootViewController.h"
+
+@interface AppDelegate()
+
+@property UINavigationController *navigationController;
+@property RootViewController *rootController;
+
+@end
 
 @implementation AppDelegate
 
@@ -16,23 +23,13 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
+    
+    self.rootController = [[RootViewController alloc] init];
+    self.navigationController = [[UINavigationController alloc] initWithRootViewController:self.rootController];
+    [self.navigationController setNavigationBarHidden:YES];
+    [self.window setRootViewController:self.navigationController];
+    
     [self.window makeKeyAndVisible];
-    
-    NSLog(@"WINDOWFRAME: %@",  [self.window description]);
-    
-    SingleQuadViewController * number1 = [[SingleQuadViewController alloc] init];
-    SingleQuadViewController * number2 = [[SingleQuadViewController alloc] init];
-    SingleQuadViewController * number3 = [[SingleQuadViewController alloc] init];
-    SingleQuadViewController * number4 = [[SingleQuadViewController alloc] init];
-    
-    
-    NSMutableArray * viewControllers = [[NSMutableArray alloc] initWithObjects:number1,number2, number3, number4, nil];
-    rootViewController = [[RootViewController alloc] initWithViewControllers:viewControllers];
-    rootViewController.wantsFullScreenLayout = NO;
-    navigationController = [[UINavigationController alloc] initWithRootViewController:rootViewController];
-    navigationController.navigationBarHidden = YES;
-    [self.window setRootViewController:navigationController];
-    
     return YES;
 }
 

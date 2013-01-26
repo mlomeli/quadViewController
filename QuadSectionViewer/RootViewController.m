@@ -2,12 +2,15 @@
 //  RootViewController.m
 //  QuadSectionViewer
 //
-//  Created by Miguel Ángel Lomelí Cantú on 1/5/13.
+//  Created by Adrián García Betancourt on 25/01/13.
 //  Copyright (c) 2013 Miguel Ángel Lomelí Cantú. All rights reserved.
 //
 
 #import "RootViewController.h"
-
+#import "Section1ViewController.h"
+#import "Section2ViewController.h"
+#import "Section3ViewController.h"
+#import "Section4ViewController.h"
 
 @interface RootViewController ()
 
@@ -15,40 +18,36 @@
 
 @implementation RootViewController
 
-- (id)initWithViewControllers: (NSMutableArray*) viewControllers
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
-    self = [super init];
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
-        _viewControllers = viewControllers;
+        self.animationDuration = 1.0;
+        self.dataSource = [NSArray arrayWithObjects:[Section1ViewController class],
+                                [Section2ViewController class],
+                                [Section3ViewController class],
+                                [Section4ViewController class],
+                                nil];
     }
     return self;
 }
 
--(void) loadView {
-    
-    NSMutableArray * viewsArray = [[NSMutableArray alloc] initWithCapacity:4];
-    int controllerCount = 0;
-    for (UIViewController<SingleViewControllerDelegate> * viewController in _viewControllers) {
-        if(controllerCount >3)
-            break;
-        [viewsArray addObject:[viewController getMiniView]];
-        controllerCount++;
-    }
-    
-    RootView * rootView = [[RootView alloc] initWithFrame:self.parentViewController.view.frame andArrayOfViews:viewsArray];
-    self.view = rootView;
+- (void)loadView
+{
+    [super loadView];
 }
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+	// Do any additional setup after loading the view.
 }
 
-#pragma-mark Rotation with Legacy support
-
-- (BOOL) shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
-    return YES;
-
+- (void)didReceiveMemoryWarning
+{
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
 }
 
 @end

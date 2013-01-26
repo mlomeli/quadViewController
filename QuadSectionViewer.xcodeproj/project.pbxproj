@@ -7,7 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FB9FCAD1169A9AC800AF512E /* MiniView.m in Sources */ = {isa = PBXBuildFile; fileRef = FB9FCAD0169A9AC800AF512E /* MiniView.m */; };
+		5EABACD916B30A4400AF4D0E /* QuadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EABACD816B30A4400AF4D0E /* QuadViewController.m */; };
+		5EABACE216B30C0600AF4D0E /* Section1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EABACE116B30C0600AF4D0E /* Section1ViewController.m */; };
+		5EABACE516B30C2C00AF4D0E /* Section2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EABACE416B30C2C00AF4D0E /* Section2ViewController.m */; };
+		5EABACE816B30C3500AF4D0E /* Section3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EABACE716B30C3500AF4D0E /* Section3ViewController.m */; };
+		5EABACEB16B30C4000AF4D0E /* Section4ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EABACEA16B30C4000AF4D0E /* Section4ViewController.m */; };
+		5EABACEE16B314FC00AF4D0E /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EABACED16B314FC00AF4D0E /* RootViewController.m */; };
 		FBA74B0716980A6500A52692 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBA74B0616980A6500A52692 /* UIKit.framework */; };
 		FBA74B0916980A6500A52692 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBA74B0816980A6500A52692 /* Foundation.framework */; };
 		FBA74B0B16980A6500A52692 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBA74B0A16980A6500A52692 /* CoreGraphics.framework */; };
@@ -22,9 +27,6 @@
 		FBA74B2716980A6500A52692 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBA74B0816980A6500A52692 /* Foundation.framework */; };
 		FBA74B2F16980A6500A52692 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FBA74B2D16980A6500A52692 /* InfoPlist.strings */; };
 		FBA74B3216980A6600A52692 /* QuadSectionViewerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA74B3116980A6600A52692 /* QuadSectionViewerTests.m */; };
-		FBA74B3E16980A9200A52692 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA74B3D16980A9200A52692 /* RootViewController.m */; };
-		FBA74B411698127300A52692 /* SingleQuadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA74B401698127300A52692 /* SingleQuadViewController.m */; };
-		FBA74B45169813E100A52692 /* RootView.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA74B44169813E100A52692 /* RootView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,9 +40,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		FB9FCACF169A9AC800AF512E /* MiniView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MiniView.h; path = ../MiniView.h; sourceTree = "<group>"; };
-		FB9FCAD0169A9AC800AF512E /* MiniView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MiniView.m; path = ../MiniView.m; sourceTree = "<group>"; };
-		FBA4B13716A5CCD10069CF07 /* SingleViewControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingleViewControllerDelegate.h; sourceTree = "<group>"; };
+		5EABACD716B30A4400AF4D0E /* QuadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuadViewController.h; sourceTree = "<group>"; };
+		5EABACD816B30A4400AF4D0E /* QuadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuadViewController.m; sourceTree = "<group>"; };
+		5EABACE016B30C0600AF4D0E /* Section1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Section1ViewController.h; sourceTree = "<group>"; };
+		5EABACE116B30C0600AF4D0E /* Section1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Section1ViewController.m; sourceTree = "<group>"; };
+		5EABACE316B30C2C00AF4D0E /* Section2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Section2ViewController.h; sourceTree = "<group>"; };
+		5EABACE416B30C2C00AF4D0E /* Section2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Section2ViewController.m; sourceTree = "<group>"; };
+		5EABACE616B30C3500AF4D0E /* Section3ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Section3ViewController.h; sourceTree = "<group>"; };
+		5EABACE716B30C3500AF4D0E /* Section3ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Section3ViewController.m; sourceTree = "<group>"; };
+		5EABACE916B30C4000AF4D0E /* Section4ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Section4ViewController.h; sourceTree = "<group>"; };
+		5EABACEA16B30C4000AF4D0E /* Section4ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Section4ViewController.m; sourceTree = "<group>"; };
+		5EABACEC16B314FC00AF4D0E /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		5EABACED16B314FC00AF4D0E /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		FBA74B0216980A6500A52692 /* QuadSectionViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuadSectionViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBA74B0616980A6500A52692 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		FBA74B0816980A6500A52692 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -60,12 +71,6 @@
 		FBA74B2E16980A6500A52692 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		FBA74B3016980A6500A52692 /* QuadSectionViewerTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuadSectionViewerTests.h; sourceTree = "<group>"; };
 		FBA74B3116980A6600A52692 /* QuadSectionViewerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuadSectionViewerTests.m; sourceTree = "<group>"; };
-		FBA74B3C16980A9200A52692 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
-		FBA74B3D16980A9200A52692 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
-		FBA74B3F1698127300A52692 /* SingleQuadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingleQuadViewController.h; sourceTree = "<group>"; };
-		FBA74B401698127300A52692 /* SingleQuadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingleQuadViewController.m; sourceTree = "<group>"; };
-		FBA74B43169813E100A52692 /* RootView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootView.h; sourceTree = "<group>"; };
-		FBA74B44169813E100A52692 /* RootView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootView.m; sourceTree = "<group>"; };
 		FBA74BE516983F3600A52692 /* HelperCategories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelperCategories.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -93,6 +98,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5E0DE78216B39A1C00D9D573 /* QuadViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5EABACD716B30A4400AF4D0E /* QuadViewController.h */,
+				5EABACD816B30A4400AF4D0E /* QuadViewController.m */,
+			);
+			name = QuadViewController;
+			sourceTree = "<group>";
+		};
+		5EABACD516B309AB00AF4D0E /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				FBA74B1516980A6500A52692 /* AppDelegate.h */,
+				FBA74B1616980A6500A52692 /* AppDelegate.m */,
+				5EABACE016B30C0600AF4D0E /* Section1ViewController.h */,
+				5EABACE116B30C0600AF4D0E /* Section1ViewController.m */,
+				5EABACE316B30C2C00AF4D0E /* Section2ViewController.h */,
+				5EABACE416B30C2C00AF4D0E /* Section2ViewController.m */,
+				5EABACE616B30C3500AF4D0E /* Section3ViewController.h */,
+				5EABACE716B30C3500AF4D0E /* Section3ViewController.m */,
+				5EABACE916B30C4000AF4D0E /* Section4ViewController.h */,
+				5EABACEA16B30C4000AF4D0E /* Section4ViewController.m */,
+				5EABACEC16B314FC00AF4D0E /* RootViewController.h */,
+				5EABACED16B314FC00AF4D0E /* RootViewController.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
 		FBA74AF716980A6500A52692 = {
 			isa = PBXGroup;
 			children = (
@@ -126,13 +159,8 @@
 		FBA74B0C16980A6500A52692 /* QuadSectionViewer */ = {
 			isa = PBXGroup;
 			children = (
-				FBA74B42169813C400A52692 /* RootViewController */,
-				FBA74B1516980A6500A52692 /* AppDelegate.h */,
-				FBA74B1616980A6500A52692 /* AppDelegate.m */,
-				FBA74B3F1698127300A52692 /* SingleQuadViewController.h */,
-				FBA74B401698127300A52692 /* SingleQuadViewController.m */,
-				FB9FCACF169A9AC800AF512E /* MiniView.h */,
-				FB9FCAD0169A9AC800AF512E /* MiniView.m */,
+				5E0DE78216B39A1C00D9D573 /* QuadViewController */,
+				5EABACD516B309AB00AF4D0E /* Classes */,
 				FBA74B0D16980A6500A52692 /* Supporting Files */,
 				FBA74BE516983F3600A52692 /* HelperCategories.h */,
 			);
@@ -170,18 +198,6 @@
 				FBA74B2D16980A6500A52692 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		FBA74B42169813C400A52692 /* RootViewController */ = {
-			isa = PBXGroup;
-			children = (
-				FBA74B3C16980A9200A52692 /* RootViewController.h */,
-				FBA74B3D16980A9200A52692 /* RootViewController.m */,
-				FBA4B13716A5CCD10069CF07 /* SingleViewControllerDelegate.h */,
-				FBA74B43169813E100A52692 /* RootView.h */,
-				FBA74B44169813E100A52692 /* RootView.m */,
-			);
-			name = RootViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -295,10 +311,12 @@
 			files = (
 				FBA74B1316980A6500A52692 /* main.m in Sources */,
 				FBA74B1716980A6500A52692 /* AppDelegate.m in Sources */,
-				FBA74B3E16980A9200A52692 /* RootViewController.m in Sources */,
-				FBA74B411698127300A52692 /* SingleQuadViewController.m in Sources */,
-				FBA74B45169813E100A52692 /* RootView.m in Sources */,
-				FB9FCAD1169A9AC800AF512E /* MiniView.m in Sources */,
+				5EABACD916B30A4400AF4D0E /* QuadViewController.m in Sources */,
+				5EABACE216B30C0600AF4D0E /* Section1ViewController.m in Sources */,
+				5EABACE516B30C2C00AF4D0E /* Section2ViewController.m in Sources */,
+				5EABACE816B30C3500AF4D0E /* Section3ViewController.m in Sources */,
+				5EABACEB16B30C4000AF4D0E /* Section4ViewController.m in Sources */,
+				5EABACEE16B314FC00AF4D0E /* RootViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

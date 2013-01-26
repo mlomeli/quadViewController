@@ -10,10 +10,6 @@
 #import "RootViewController.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
-{
-    RootViewController * rootViewController;
-    UINavigationController * navigationController;
-}
 
 @property (strong, nonatomic) UIWindow *window;
 

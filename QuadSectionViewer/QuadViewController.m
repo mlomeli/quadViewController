@@ -31,6 +31,10 @@
 - (void)handleTap:(UITapGestureRecognizer *)sender;
 - (void)animateExpandSection:(UIView *)section;
 - (void)animateCollapseSection:(UIView *)section;
+- (CGRect)section1Frame;
+- (CGRect)section2Frame;
+- (CGRect)section3Frame;
+- (CGRect)section4Frame;
 
 @end
 
@@ -56,34 +60,38 @@
     
     self.section1View = [(id<QuadViewControllerDataSource>)[self.dataSource objectAtIndex:0] controllerView];
     [self.section1View setTransform:CGAffineTransformMakeScale(0.5, 0.5)];
-    [self.section1View setFrame:CGRectMake(0,
-                                      0,
-                                      view.bounds.size.width/2.0,
-                                      view.bounds.size.height/2.0)];
+    [self.section1View setFrame:[self section1Frame]];
+    [self.section1View setAutoresizingMask:UIViewAutoresizingFlexibleWidth|
+     UIViewAutoresizingFlexibleHeight|
+     UIViewAutoresizingFlexibleRightMargin|
+     UIViewAutoresizingFlexibleBottomMargin];
     [view addSubview:self.section1View];
 
     self.section2View = [(id<QuadViewControllerDataSource>)[self.dataSource objectAtIndex:1] controllerView];
     [self.section2View setTransform:CGAffineTransformMakeScale(0.5, 0.5)];
-    [self.section2View setFrame:CGRectMake(view.bounds.size.width/2.0,
-                                      0,
-                                      view.bounds.size.width/2.0,
-                                      view.bounds.size.height/2.0)];
+    [self.section2View setFrame:[self section2Frame]];
+    [self.section2View setAutoresizingMask:UIViewAutoresizingFlexibleWidth|
+     UIViewAutoresizingFlexibleHeight|
+     UIViewAutoresizingFlexibleLeftMargin|
+     UIViewAutoresizingFlexibleBottomMargin];
     [view addSubview:self.section2View];
     
     self.section3View = [(id<QuadViewControllerDataSource>)[self.dataSource objectAtIndex:2] controllerView];
     [self.section3View setTransform:CGAffineTransformMakeScale(0.5, 0.5)];
-    [self.section3View setFrame:CGRectMake(0,
-                                      view.bounds.size.height/2.0,
-                                      view.bounds.size.width/2.0,
-                                      view.bounds.size.height/2.0)];
+    [self.section3View setFrame:[self section3Frame]];
+    [self.section3View setAutoresizingMask:UIViewAutoresizingFlexibleWidth|
+     UIViewAutoresizingFlexibleHeight|
+     UIViewAutoresizingFlexibleTopMargin|
+     UIViewAutoresizingFlexibleRightMargin];
     [view addSubview:self.section3View];
     
     self.section4View = [(id<QuadViewControllerDataSource>)[self.dataSource objectAtIndex:3] controllerView];
     [self.section4View setTransform:CGAffineTransformMakeScale(0.5, 0.5)];
-    [self.section4View setFrame:CGRectMake(view.bounds.size.width/2.0,
-                                      view.bounds.size.height/2.0,
-                                      view.bounds.size.width/2.0,
-                                      view.bounds.size.height/2.0)];
+    [self.section4View setFrame:[self section4Frame]];
+    [self.section4View setAutoresizingMask:UIViewAutoresizingFlexibleWidth|
+     UIViewAutoresizingFlexibleHeight|
+     UIViewAutoresizingFlexibleTopMargin|
+     UIViewAutoresizingFlexibleLeftMargin];
     [view addSubview:self.section4View];
     
     self.view = view;
@@ -165,40 +173,25 @@
 
 - (void)animateExpandSection:(UIView *)section
 {
-    CGFloat translationDirectionX;
-    CGFloat translationDirectionY;
-    
     switch (section.tag) {
         case SECTION_1:
-            translationDirectionX = 1.0;
-            translationDirectionY = 1.0;
             [self.view setTag:STATE_SECTION_1_EXPANDED];
             break;
         case SECTION_2:
-            translationDirectionX = -1.0;
-            translationDirectionY = 1.0;
             [self.view setTag:STATE_SECTION_2_EXPANDED];
             break;
         case SECTION_3:
-            translationDirectionX = 1.0;
-            translationDirectionY = -1.0;
             [self.view setTag:STATE_SECTION_3_EXPANDED];
             break;
         case SECTION_4:
-            translationDirectionX = -1.0;
-            translationDirectionY = -1.0;
             [self.view setTag:STATE_SECTION_4_EXPANDED];
             break;
     }
     [UIView animateWithDuration:self.animationDuration
                      animations:^() {
                          [self.view bringSubviewToFront:section];
-                         CGAffineTransform makeScale = CGAffineTransformMakeScale(1.0, 1.0);
-                         CGAffineTransform makeTranslation = CGAffineTransformMakeTranslation(translationDirectionX *
-                                                                                              self.view.bounds.size.width/4.0,
-                                                                                              translationDirectionY *
-                                                                                              self.view.bounds.size.height/4.0);
-                         [section setTransform:CGAffineTransformConcat(makeScale, makeTranslation)];
+                         [section setTransform:CGAffineTransformMakeScale(1.0, 1.0)];
+                         [section setFrame:self.view.bounds];
                      }
                      completion:^(BOOL finished) {
                          UIViewController *sectionController = [[[self.dataSource objectAtIndex:section.tag] alloc] init];
@@ -210,33 +203,58 @@
 
 - (void)animateCollapseSection:(UIView *)section
 {
-    CGFloat translationDirectionX;
-    CGFloat translationDirectionY;
+    CGRect sectionFrame;
     
     switch (section.tag) {
         case SECTION_1:
-            translationDirectionX = -1.0;
-            translationDirectionY = -1.0;
+            sectionFrame = [self section1Frame];
             break;
         case SECTION_2:
-            translationDirectionX = 1.0;
-            translationDirectionY = -1.0;
+            sectionFrame = [self section2Frame];
             break;
-        case SECTION_3:
-            translationDirectionX = -1.0;
-            translationDirectionY = 1.0;
+        case SECTION_3:sectionFrame = [self section3Frame];
             break;
         case SECTION_4:
-            translationDirectionX = 1.0;
-            translationDirectionY = 1.0;
+            sectionFrame = [self section4Frame];
             break;
     }
-    [self.view setTag:STATE_NORMAL];
     [UIView animateWithDuration:self.animationDuration
                      animations:^() {
                          [self.view bringSubviewToFront:section];
                          [section setTransform:CGAffineTransformMakeScale(0.5, 0.5)];
+                         [section setFrame:sectionFrame];
+                     }
+                     completion:^(BOOL finished) {
+                         [self.view setTag:STATE_NORMAL];
                      }];
+}
+
+- (CGRect)section1Frame {
+    return CGRectMake(0,
+                      0,
+                      self.view.bounds.size.width/2.0,
+                      self.view.bounds.size.height/2.0);
+}
+
+- (CGRect)section2Frame {
+    return CGRectMake(self.view.bounds.size.width/2.0,
+                      0,
+                      self.view.bounds.size.width/2.0,
+                      self.view.bounds.size.height/2.0);
+}
+
+- (CGRect)section3Frame {
+    return CGRectMake(0,
+               self.view.bounds.size.height/2.0,
+               self.view.bounds.size.width/2.0,
+               self.view.bounds.size.height/2.0);
+}
+
+- (CGRect)section4Frame {
+    return CGRectMake(self.view.bounds.size.width/2.0,
+                      self.view.bounds.size.height/2.0,
+                      self.view.bounds.size.width/2.0,
+                      self.view.bounds.size.height/2.0);
 }
 
 @end
